@@ -5,7 +5,6 @@
 }
 
 body {
-    background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     padding: 2%;
     font-family: Helvetica;
@@ -13,6 +12,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 header {
@@ -26,6 +29,7 @@ header {
     & h1 {
         text-align: center;
         width: 100%;
+        font-size: 40px;
     }
 }
 
@@ -42,7 +46,8 @@ header {
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 2vh;
+        margin-bottom: 6vh;
+        font-size: 25px;
     }
 
     & .div-main {
@@ -57,34 +62,40 @@ header {
 
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            background-color: rgb(0, 0, 0, 0.4);
+
             border: 1px black solid;
             border-radius: 20px;
 
-            background-color: transparent;
-            width: 100%;
-            height: 10vh;
-            
+            padding: 10px;
+            width: auto;
+            height: 60px;
+            gap: 3vw;
             margin-bottom: 2vh;
 
             & label {
+                display: block;
                 background-color: rgb(0, 0, 0);
-                border-radius: 20px;
+                padding: 5px;
+                border-radius: 10px;
                 color: white;
-                width: 40%;
+                width: auto;
+                height: auto;
                 
                 text-align: center;
-                font-size: large;
+                font-size: 100%;
             }
 
-            & #input-text-variables {
+            & #textarea-variables {
                 background-color: rgb(243, 231, 255);
-                border-radius: 20px;
-                width: 40%;
-                height: 40%;
-                padding: 0% 2%;
-                font-size: large;
+                padding: 5px;
+                border-radius: 10px;
+                width: auto;
+                height: auto;
+                font-size: 15px;
+                text-align: initial;
             }
         }
 
@@ -101,14 +112,20 @@ header {
                 justify-content: center;
                 width: 100%;
                 height: 50px;
-                margin-top: 2vh;
+                margin-bottom: 2vh;
+                
 
                 & #input-convert-string {
                     background-color: rgb(243, 231, 255);
                     height: 70%;
                     width: 20%;
                     border: 1px black solid;
-                    border-radius: 20px;
+                    border-radius: 12px;
+                }
+
+                & #input-convert-string:hover {
+                    background-color: rgb(255, 129, 129);
+                    color: white;
                 }
             }
         }
@@ -118,23 +135,25 @@ header {
 
 .span-articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    background-color: blue;
 
     & .article-variable {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         border: black solid 1px;
-        border-radius: 20px;
+        border-radius: 18px;
         width: 30%;
         height: 300px;
         background: rgb(255,0,0);
-        background: linear-gradient(0deg, rgb(0, 255, 115) 88%, rgb(17, 0, 255) 100%);
-        margin: 20px;
+        background: linear-gradient(0deg, rgb(240, 255, 108) 88%, rgb(251, 255, 0) 100%);
+        margin: 1%;
 
         & .div-of-h3-and-p-value {
             display: flex;
@@ -151,7 +170,7 @@ header {
                 text-align: center;
                 width: 100%;
                 height: 50%;
-                color: white;
+                color: rgb(0, 0, 0);
                 font-size: medium;
             }
     
@@ -161,10 +180,12 @@ header {
                 align-items: center;
                 background-color: rgb(0, 0, 0);
                 color: white;
-                text-align: center;
+                text-align: justify;
                 width: 100%;
                 height: 50%;
-                font-size: larger;
+                font-size: auto;
+                white-space: normal;
+                overflow-wrap: break-word;
             }
         }
 
@@ -180,7 +201,11 @@ header {
 
             & .p-description {
                 width: 100%;
-                
+                height: 100%;
+                white-space: normal;
+                overflow-wrap: break-word;
+                text-align: justify;
+                word-wrap: break-word;
             }
 
         }

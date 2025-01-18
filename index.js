@@ -1,4 +1,4 @@
-const INPUT_TEXT_VARIABLES = document.getElementById('input-text-variables')
+const TEXTAREA_VARIABLES = document.getElementById('textarea-variables')
 const INPUT_CONVERT_STRING = document.getElementById('input-convert-string')
 const SPAN_RESULTADO_VARIABLE_CONVERSION = document.getElementById('resultado-variable-conversion')
 
@@ -119,11 +119,11 @@ function getVariabletTypes (arrayOfString) {
 
 function executeStringConvertion () {
 
-    if (INPUT_TEXT_VARIABLES.value) {
+    if (TEXTAREA_VARIABLES.value) {
 
         SPAN_RESULTADO_VARIABLE_CONVERSION.innerHTML = ''
 
-        const stringAConvertir = INPUT_TEXT_VARIABLES.value.trim()
+        const stringAConvertir = TEXTAREA_VARIABLES.value.trim()
         const arrayDeString = stringAConvertir.split(' ')
 
         const conversionDeVariables = getVariabletTypes(arrayDeString)
