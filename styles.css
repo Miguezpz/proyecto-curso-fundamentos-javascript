@@ -139,7 +139,6 @@ header {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    background-color: blue;
 
     & .article-variable {
         display: flex;
@@ -214,4 +213,27 @@ header {
     }
 }
 
+@media (min-width: 335px) {
+    .span-articles {
+        & .article-variable {            
+            width: 80%;
+        }
+    }
+}
 
+
+@media (min-width: 640px) {
+    .span-articles {
+        & .article-variable {            
+            width: 44%;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .span-articles {
+        & .article-variable {            
+            width: 30%;
+        }
+    }
+}
