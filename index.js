@@ -121,9 +121,12 @@ function executeStringConvertion () {
 
     if (TEXTAREA_VARIABLES.value) {
 
+        const textAreaValorString = TEXTAREA_VARIABLES.value
+
+        TEXTAREA_VARIABLES.value = ''
         SPAN_RESULTADO_VARIABLE_CONVERSION.innerHTML = ''
 
-        const stringAConvertir = TEXTAREA_VARIABLES.value.trim()
+        const stringAConvertir = textAreaValorString.trim()
         const arrayDeString = stringAConvertir.split(' ')
 
         const conversionDeVariables = getVariabletTypes(arrayDeString)

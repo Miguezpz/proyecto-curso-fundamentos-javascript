@@ -151,7 +151,7 @@ header {
         width: 30%;
         height: 300px;
         background: rgb(255,0,0);
-        background: linear-gradient(0deg, rgb(240, 255, 108) 88%, rgb(251, 255, 0) 100%);
+        background: linear-gradient(0deg, rgb(240, 255, 108, 0.1) 88%, rgb(251, 255, 0) 100%);
         margin: 1%;
 
         & .div-of-h3-and-p-value {
@@ -196,7 +196,9 @@ header {
             width: 100%;
             height: 70%;
             padding: 3%;
-            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgb(243, 231, 255) 20%);
+            /* background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgb(243, 231, 255) 20%); */
+            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgb(243, 231, 255, 0) 20%);
+            border-radius: 18px;
 
             & .p-description {
                 width: 100%;
@@ -206,14 +208,40 @@ header {
                 text-align: justify;
                 word-wrap: break-word;
             }
-
         }
-
-        
     }
 }
 
 @media (min-width: 335px) {
+
+    #section-declaracion-variables {
+
+        & h2 {
+            padding: 0px 14%;
+        }
+    }
+
+    #section-declaracion-variables {
+
+        & .div-main {
+
+            & .div-introduce-variable-string {
+                flex-direction: column;
+                height: auto;
+            }
+
+            & .div-conversion-string {
+                & .div-input-button-generate-variable-strings {
+
+                    & #input-convert-string {
+                        width: auto;
+                        padding: 0px 5%;
+                    }
+                }
+            }
+        }
+    }
+
     .span-articles {
         & .article-variable {            
             width: 80%;
@@ -231,6 +259,35 @@ header {
 }
 
 @media (min-width: 900px) {
+
+    #section-declaracion-variables {
+
+        & h2 {
+            padding: 0px;
+        }
+    }
+
+    #section-declaracion-variables {
+
+        & .div-main {
+
+            & .div-introduce-variable-string {
+                flex-direction: row;
+                height: auto;
+            }
+
+            & .div-conversion-string {
+                & .div-input-button-generate-variable-strings {
+
+                    & #input-convert-string {
+                        width: auto;
+                        padding: 0px 5%;
+                    }
+                }
+            }
+        }
+    }
+
     .span-articles {
         & .article-variable {            
             width: 30%;
