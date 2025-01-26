@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(196, 0, 196, 0.556);
+    font-family: Helvetica;
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: green;
+    width: 100%;
+    height: auto;
+    padding: 2% 4%;
+    margin-bottom: 2vh;
+
+    & h1 {
+        display: inline-block;
+        min-width: 40%;
+        background-color: rgba(9, 255, 0, 0.232);
+        font-size: 20px;
+    }
+}
+
+.section-add-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(201, 0, 0, 0.498);
+    width: 100%;
+    min-height: 20vh;
+    max-height: auto;
+    padding: 2%;
+
+    & .div-add-task {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 255, 0.573);
+        width: 100%;
+        height: auto;
+        padding: 3% 1%;
+        margin-bottom: 2vh;
+    }
+
+    & .div-span-tasks {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(255, 255, 0, 0.585);
+        width: 100%;
+        min-height: 100px;
+        height: auto;
+        padding: 1%;
+
+        & .div-p-and-editButtons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: orange;
+            border: 1px solid black;
+            width: 100%;
+            height: auto;
+            padding: 1% 0%;
+            margin-bottom: 1%;
+        }
+
+        & .span-tasks {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+
+            & .task-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgba(255, 255, 0, 0.507);
+                color: black;
+                border: 1px solid black;
+                margin-top: 1%;
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 const TEXTAREA_VARIABLES = document.getElementById('textarea-variables')
 const INPUT_CONVERT_STRING = document.getElementById('input-convert-string')
 const SPAN_RESULTADO_VARIABLE_CONVERSION = document.getElementById('resultado-variable-conversion')
+const DIV_REGRESAR_MAIN_MENU = document.querySelector('.div-a-regresar-main-menu')
 
 class Variable {
     constructor (name, value, description, id) {
@@ -122,6 +123,7 @@ function executeStringConvertion () {
     if (TEXTAREA_VARIABLES.value) {
 
         const textAreaValorString = TEXTAREA_VARIABLES.value
+        DIV_REGRESAR_MAIN_MENU.style.display = 'flex'
 
         TEXTAREA_VARIABLES.value = ''
         SPAN_RESULTADO_VARIABLE_CONVERSION.innerHTML = ''
