@@ -10,20 +10,30 @@
 
         <header>
             <h1>Fundamentos de JavaScript</h1>
+            <p>To Do</p>
         </header>
 
         <section class="section-add-task">
 
             <div class="div-add-task">
-                <input type="text" placeholder="Agrega una tarea" id="input-text-task">
-                <button id="button-task-add">Agregar</button>
+                <div class="div-input-text-add-task">
+                    <input type="text" placeholder="Escribe una tarea" id="input-text-add-task">
+                </div>
+                <div class="div-button-add-task">
+                    <button id="button-add-task">Agregar</button>
+                </div>
             </div>
 
             <div class="div-span-tasks">
 
                 <div class="div-p-and-editButtons">
-                    <p>Tareas</p>
-                    <button>Editar/X</button>
+                    <div class="div-p-task-label">
+                        <p class="p-task-label">Tareas</p>
+                    </div>
+
+                    <div class="div-button-edit-done-tasks">
+                        <button id="button-edit-done-tasks">Editar</button>
+                    </div>
                 </div>
 
                 <span class="span-tasks"></span>
@@ -34,4 +44,4 @@
 
         <script src="./script.js"></script>
     </body>
-</html
+</html>
