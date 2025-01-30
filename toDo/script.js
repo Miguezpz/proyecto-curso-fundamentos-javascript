@@ -51,11 +51,11 @@ function addEventListenersToButtonAndCheckBox (taskObj) {
 
         if (checkBoxDOMElement.checked) {
             pDOMElement.style.textDecoration = 'line-through'
-            pDOMElement.style.color = 'green'
+            pDOMElement.style.color = 'black'
 
         } else if (!checkBoxDOMElement.checked) {
             pDOMElement.style.textDecoration = 'none'
-            pDOMElement.style.color = 'black'
+            pDOMElement.style.color = 'rgb(255, 255, 255)'
         }
     }
 
@@ -216,5 +216,5 @@ window.addEventListener('keyup', (event) => {
 
 BUTTON_EDIT_DONE_TASKS.addEventListener('click', switchDisplayedEditElements)
 
-
+//0... Escribir lógica para evitar id's duplicados en los numeros aleatorios generados.
 //1... Continuar con los estilos en las tareas
