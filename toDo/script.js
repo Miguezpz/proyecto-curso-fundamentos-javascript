@@ -5,9 +5,19 @@ const BUTTON_EDIT_DONE_TASKS = document.getElementById('button-edit-done-tasks')
 
 let arrayTasks = new Array()
 
-function verifyArrayTasksLength () {
-    if (arrayTasks.length < 1) {
-
+class NewTask {
+    constructor (
+        taskValue, 
+        divContainerId, 
+        checkboxId, 
+        deleteButtonId,
+        pTextId    
+    ) {
+        this.taskValue = taskValue
+        this.divContainerId = divContainerId
+        this.checkboxId = checkboxId
+        this.deleteButtonId = deleteButtonId
+        this.pTextId = pTextId
     }
 }
 
@@ -122,6 +132,7 @@ function addNewTaskToSpanElement () {
     if (newTask.length > 0) {
 
         INPUT_TEXT_TASK.value = ''
+        const buttonValue = BUTTON_EDIT_DONE_TASKS.textContent
 
         //main div
         const divContainer = document.createElement('div')
@@ -159,7 +170,17 @@ function addNewTaskToSpanElement () {
         deleteButton.textContent = '✖️'
         deleteButton.id = deleteButtonId
         deleteButton.classList.add('task-button-element')
-        deleteButton.style.display = 'none'
+        
+
+        //It solves a bug by starting with the right DOM element's display value
+        if (buttonValue === 'Listo') {
+            deleteButton.style.display = 'flex'
+            checkbox.style.display = 'none'
+
+        } else if (buttonValue === 'Editar') {
+            deleteButton.style.display = 'none'
+            checkbox.style.display = 'flex'
+        }
 
         //DOM elements injection
         divP.append(pElement)
@@ -169,15 +190,13 @@ function addNewTaskToSpanElement () {
         divContainer.append(divCheckboxAndButton)
         SPAN_TASKS.append(divContainer)
 
-        const taskObject = {
-            divContainerId: divContainerId,
-            taskValue: newTask,
-            checkboxId: checkboxId,
-            deleteButtonId: deleteButtonId,
-            pTextId: pElementId
-        }
-
-        console.log(taskObject.divContainerId)
+        const taskObject = new NewTask(
+            newTask,
+            divContainerId,
+            checkboxId,
+            deleteButtonId,
+            pElementId
+        )
 
         arrayTasks.push(taskObject)
         addEventListenersToButtonAndCheckBox(taskObject)
@@ -218,3 +237,13 @@ BUTTON_EDIT_DONE_TASKS.addEventListener('click', switchDisplayedEditElements)
 
 //0... Escribir lógica para evitar id's duplicados en los numeros aleatorios generados.
 //1... Continuar con los estilos en las tareas
+//2... crear clase para cada objeto de cada newTask
+
+/* 
+
+Resolvi bug de boton al crear un nuevo task, agregar a commit.
+
+He creado una clase para manejar crear un objeto por cada new task
+
+
+*/

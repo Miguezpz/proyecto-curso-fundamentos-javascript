@@ -31,14 +31,14 @@ header {
     & h1 {
         display: inline-block;
         min-width: 40%;
-        font-size: 6.5vw;
+        font-size: 1.6rem;
         margin-bottom: 1vh;
     }
 
     & p {
         font-weight: 900;
         font-style: italic;
-        font-size: 4.5 vw;
+        font-size: 1.2rem;
     }
 }
 
@@ -55,7 +55,7 @@ header {
     & .div-add-task {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; 
         flex-direction: column;
         width: 100%;
         height: auto;
@@ -75,7 +75,7 @@ header {
             & #input-text-add-task {
                 width: 100%;
                 min-height: 11vw;
-                font-size: 5vw;
+                font-size: 1.2rem;
                 padding: 2% 3%;
                 border: 1px solid rgba(0, 0, 0, 0.171);
                 border-radius: 3vw;
@@ -95,6 +95,7 @@ header {
                 padding: 2%;
                 border: 1px solid rgba(0, 0, 0, 0.171);
                 border-radius: 2vw;
+                font-size: 1rem;
             }
         }
     }
@@ -131,7 +132,7 @@ header {
                 & .p-task-label {
                     width: 100%;
                     height: auto;
-                    font-size: 5vw;
+                    font-size: 1.1rem;
                     color: rgb(255, 255, 255);
                 }
             }
@@ -150,6 +151,7 @@ header {
                     border: 1px solid rgba(0, 0, 0, 0.171);
                     border-radius: 2vw;
                     padding: 0%;
+                    font-size: 0.8rem;
                 }
             }
             
@@ -186,7 +188,7 @@ header {
                         overflow-wrap: break-word;
                         white-space: normal;
                         width: 100%;
-                        font-size: 5.5vw;
+                        font-size: 1.1rem;
                         color: rgb(255, 255, 255);
                     }
                 }
@@ -231,27 +233,50 @@ header {
     header {
         
         & h1 {
-            font-size: 6vw;
+            font-size: 2rem;
         }
 
         & p {
-            font-size: 4vw;
+            font-size: 1rem;
         }
     }
 
     .section-add-task {
         & .div-add-task {
             & .div-input-text-add-task {
+
                 & #input-text-add-task {
-                    width: 100%;
-                    min-height: 10vw;
-                    font-size: 4vw;
-                    padding: 2% 3%;
-                    border: 1px solid rgba(0, 0, 0, 0.171);
-                    border-radius: 3vw;
+                    font-size: 1.5rem;
+                }
+
+                & #button-add-task {
+                    font-size: 1.2rem;
                 }
             }
         }
+
+    & .div-span-tasks {
+
+        & .div-p-and-editButtons {
+            & .div-p-task-label {
+
+                & .p-task-label {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        & .span-tasks {
+            & .task-element {
+                & .div-p {
+
+                    & .task-p-element {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
     }
 }
 
