@@ -237,7 +237,6 @@ BUTTON_EDIT_DONE_TASKS.addEventListener('click', switchDisplayedEditElements)
 
 //0... Escribir lógica para evitar id's duplicados en los numeros aleatorios generados.
 //1... Continuar con los estilos en las tareas
-//2... crear clase para cada objeto de cada newTask
 
 /* 
 

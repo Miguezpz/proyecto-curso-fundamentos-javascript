@@ -5,12 +5,16 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #EEEEEE;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: white;
-    padding: 0% 2%;
+    padding: 0% 5%;
     text-align: center;
     font-family: Helvetica;
 }
@@ -31,14 +35,14 @@ header {
     & h1 {
         display: inline-block;
         min-width: 40%;
-        font-size: 1.6rem;
+        font-size: 2rem;
         margin-bottom: 1vh;
     }
 
     & p {
         font-weight: 900;
         font-style: italic;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -75,7 +79,7 @@ header {
             & #input-text-add-task {
                 width: 100%;
                 min-height: 11vw;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 padding: 2% 3%;
                 border: 1px solid rgba(0, 0, 0, 0.171);
                 border-radius: 3vw;
@@ -94,8 +98,8 @@ header {
                 width: auto;
                 padding: 2%;
                 border: 1px solid rgba(0, 0, 0, 0.171);
-                border-radius: 2vw;
-                font-size: 1rem;
+                border-radius: 3vw;
+                font-size: 1.2rem;
             }
         }
     }
@@ -107,7 +111,7 @@ header {
         align-items: center;
         width: 100%;
         height: auto;
-        padding: 1%;
+        
         margin-bottom: 10%;
 
         & .div-p-and-editButtons {
@@ -132,7 +136,7 @@ header {
                 & .p-task-label {
                     width: 100%;
                     height: auto;
-                    font-size: 1.1rem;
+                    font-size: 1.4rem;
                     color: rgb(255, 255, 255);
                 }
             }
@@ -141,17 +145,16 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                align-items: center;
                 width: 20%;
 
                 & #button-edit-done-tasks {
                     background-color: rgb(255, 255, 255);
-                    width: 10vw;
+                    width: auto;
                     height: 10vw;
                     border: 1px solid rgba(0, 0, 0, 0.171);
-                    border-radius: 2vw;
-                    padding: 0%;
-                    font-size: 0.8rem;
+                    border-radius: 3vw;
+                    padding: 0% 4%;
+                    font-size: 1.2rem;
                 }
             }
             
@@ -188,7 +191,7 @@ header {
                         overflow-wrap: break-word;
                         white-space: normal;
                         width: 100%;
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                         color: rgb(255, 255, 255);
                     }
                 }
@@ -231,13 +234,14 @@ header {
     }
 
     header {
+        width: 88%;
         
         & h1 {
-            font-size: 2rem;
+            font-size: 1.9rem;
         }
 
         & p {
-            font-size: 1rem;
+            font-size: 1.4rem;
         }
     }
 
@@ -248,40 +252,104 @@ header {
                 & #input-text-add-task {
                     font-size: 1.5rem;
                 }
+            }
 
+            & .div-button-add-task {
                 & #button-add-task {
                     font-size: 1.2rem;
                 }
             }
         }
 
-    & .div-span-tasks {
+        & .div-span-tasks {
 
-        & .div-p-and-editButtons {
-            & .div-p-task-label {
+            & .div-p-and-editButtons {
+                & .div-p-task-label {
 
-                & .p-task-label {
-                    font-size: 1.4rem;
+                    & .p-task-label {
+                        font-size: 1.4rem;
+                    }
                 }
             }
-        }
 
-        & .span-tasks {
-            & .task-element {
-                & .div-p {
+            & .span-tasks {
+                & .task-element {
+                    & .div-p {
 
-                    & .task-p-element {
-                        font-size: 1.4rem;
+                        & .task-p-element {
+                            font-size: 1.4rem;
+                        }
                     }
                 }
             }
         }
     }
-    }
 }
 
 @media (min-width: 640px) {
 
+    body {
+        background-color: rgb(255, 166, 0);
+    }
+
+    header {
+
+        width: 85%;
+        height: auto;
+        
+        & h1 {
+            font-size: 1.8rem;
+        }
+
+        & p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .section-add-task {
+        & .div-add-task {
+            & .div-input-text-add-task {
+
+                & #input-text-add-task {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & .div-button-add-task {
+
+                & #button-add-task {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        & .div-span-tasks {
+
+            & .div-p-and-editButtons {
+
+                width: 85%;
+                min-height: 10vw;
+
+                & .div-p-task-label {
+
+                    & .p-task-label {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            & .span-tasks {
+                & .task-element {
+                    & .div-p {
+
+                        & .task-p-element {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
