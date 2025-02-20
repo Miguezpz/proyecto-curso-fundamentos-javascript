@@ -236,13 +236,4 @@ window.addEventListener('keyup', (event) => {
 BUTTON_EDIT_DONE_TASKS.addEventListener('click', switchDisplayedEditElements)
 
 //0... Escribir lógica para evitar id's duplicados en los numeros aleatorios generados.
-//1... Continuar con los estilos en las tareas
 
-/* 
-
-Resolvi bug de boton al crear un nuevo task, agregar a commit.
-
-He creado una clase para manejar crear un objeto por cada new task
-
-
-*/
