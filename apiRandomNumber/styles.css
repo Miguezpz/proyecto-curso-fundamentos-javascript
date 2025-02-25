@@ -38,3 +38,67 @@ main {
     display: flex;
     border: black solid 1px;
 }
+
+.div-p-info {
+    background-color: rgb(34, 34, 34);
+    padding: 1%;
+    margin-bottom: 40px;
+}
+
+.p-API-description {
+    background-color: purple;
+    color: white;
+}
+
+.p-API-URL {
+    background-color: blue;
+    color: white;
+}
+
+.p-API-delay {
+    background-color: green;
+    color: white;
+}
+
+
+.div-inputs-introduce-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+
+.div-button-get-random-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: brown;
+    margin-bottom: 10px;
+}
+
+.div-span-result-random-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    background-color: rgb(0, 214, 179);
+    color: white;
+}
+
+
+.p-result-random-number {
+    font-size: 1.3rem;
+}
+
+#span-result-random-number {
+    font-size: 2.5rem;
+    color: black;
+}

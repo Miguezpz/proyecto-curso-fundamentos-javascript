@@ -13,9 +13,6 @@ body {
     background-color: #ffffff;
     opacity: 1;
     background: linear-gradient(135deg, #00000055 25%, transparent 25%) -19px 0/ 38px 38px, linear-gradient(225deg, #000000 25%, transparent 25%) -19px 0/ 38px 38px, linear-gradient(315deg, #00000055 25%, transparent 25%) 0px 0/ 38px 38px, linear-gradient(45deg, #000000 25%, #ffffff 25%) 0px 0/ 38px 38px;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
     color: white;
     padding: 0% 5%;
     text-align: center;

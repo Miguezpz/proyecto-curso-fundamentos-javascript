@@ -7,17 +7,43 @@
 </head>
 <body>
     <header>
-        <h1>Fundamentos de Javascript</h1>
-        <h2>API Número Aleatorio</h2>
+            <h1>Fundamentos de Javascript</h1>
+            <h2>API Número Aleatorio</h2>     
     </header>
     
     <main>
-        <div>
-            <input type="number" placeholder="Número mínimo">
+        <div class="div-p-info">
+            <p class="p-API-description">
+                Este sitio web envia una petición a un API externo
+                que devuelve un número aleatorio como respuesta, el valor depende 
+                de un valor mínimo y máximo que introduzcas en los
+                siguientes inputs de texto.
+            </p>
+            <p class="p-API-URL">
+                API: <i>https://api-random-number-miguezpz.onrender.com/randomNumber/min-value/max-value</i>
+            </p>
+            <p class="p-API-delay">
+                La respuesta del servidor puede demorar más de 15 segundos en la primera petición.
+            </p>
         </div>
 
-        <div>
-            <input type="number" placeholder="Número máximo">
+        <div class="div-inputs-introduce-numbers">
+            <div>
+                <input type="number" placeholder="Número mínimo" id="input-min-value">
+            </div>
+    
+            <div>
+                <input type="number" placeholder="Número máximo" id="input-max-value">
+            </div>
+        </div>
+        
+        <div class="div-button-get-random-number">
+            <button id="button-get-random-number">Obtener número random</button>
+        </div>
+
+        <div class="div-span-result-random-number">
+            <p class="p-result-random-number">Tu número aleatorio generado es:</p>
+            <span id="span-result-random-number"></span>
         </div>
     </main>
 
