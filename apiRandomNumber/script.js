@@ -9,13 +9,20 @@
     const INPUT_MAX_VALUE = document.getElementById('input-max-value')
     const INPUT_RANDOM_NUMBER_QUANTITY = document.getElementById('input-random-number-quantity')
     const BUTTON_GET_RANDOM_NUMBER = document.getElementById('button-get-random-number')
+    const SPAN_RANDOM_NUMBER_MESSAGE = document.querySelector('.span-random-number-message')
     const SPAN_RESULT_RANDOM_NUMBER = document.getElementById('span-result-random-number')
 
+
+    function disableButtonGetRandomNumber (trueOrFalse) {
+        BUTTON_GET_RANDOM_NUMBER.disabled = trueOrFalse
+    }
 
     async function getRandomNumbersFromAPI (minValue, maxValue, numberQuantity) {
 
         try {
             SPAN_RESULT_RANDOM_NUMBER.textContent = ''
+            SPAN_RANDOM_NUMBER_MESSAGE.textContent = 'Esperando respuesta del servidor 🔄 ... '
+            SPAN_RANDOM_NUMBER_MESSAGE.style.display = 'flex'
             const generatedNumbers = []
 
             for (let i = 0; i < numberQuantity; i++) {
@@ -31,6 +38,9 @@
                     for (randomNumber of joinedArray) {
                         SPAN_RESULT_RANDOM_NUMBER.textContent += randomNumber
                     }
+
+                    SPAN_RANDOM_NUMBER_MESSAGE.textContent = 'Números generados ✅'
+                    disableButtonGetRandomNumber(false)
                 }
             }
 
@@ -46,6 +56,8 @@
             && INPUT_MAX_VALUE.value
             && INPUT_RANDOM_NUMBER_QUANTITY.value <= 20
         ) {
+
+            disableButtonGetRandomNumber(true)
             const minValue = INPUT_MIN_VALUE.value
             const maxValue = INPUT_MAX_VALUE.value
             const numberQuantity = INPUT_RANDOM_NUMBER_QUANTITY.value
@@ -57,6 +69,7 @@
     BUTTON_GET_RANDOM_NUMBER.addEventListener('click', () => {
         
         if (INPUT_MIN_VALUE.value && INPUT_MAX_VALUE.value && INPUT_RANDOM_NUMBER_QUANTITY.value <= 20) {   
+            disableButtonGetRandomNumber(true)
             const minValue = INPUT_MIN_VALUE.value
             const maxValue = INPUT_MAX_VALUE.value
             const numberQuantity = INPUT_RANDOM_NUMBER_QUANTITY.value
