@@ -86,7 +86,7 @@ main {
 .div-inputs-introduce-numbers {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around∂;
     align-items: center;
     width: 100%;
     height: auto;
