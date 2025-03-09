@@ -16,15 +16,13 @@
         <div class="div-p-info">
 
             <p class="p-API-description">
-                Este sitio web envia una petición a un API externo
+                Este sitio web envia una petición a un API
                 que devuelve un número aleatorio como respuesta, el valor depende 
                 de un valor mínimo y máximo que introduzcas en los
-                siguientes inputs de texto.
+                siguientes inputs numéricos.
             </p>
 
-            <p class="p-API-URL">
-                API: <i>https://api-random-number-miguezpz.onrender.com/randomNumber/min-value/max-value</i>
-            </p>
+            
 
             <p class="p-API-delay">
                 La respuesta del servidor puede demorar más de 20 segundos en la primera petición.
@@ -42,7 +40,7 @@
             </div>
 
             <div>
-                <input type="number" placeholder="Cantidad a generar" id="input-random-number-quantity">
+                <input type="number" placeholder="Cantidad < 21" id="input-random-number-quantity">
             </div>
         </div>
         
@@ -60,7 +58,9 @@
     </main>
 
     <footer>
-
+        <p class="p-API-URL">
+            API: https://api-random-number-miguezpz.onrender.com/randomNumber/'min-value'/'max-value'
+        </p>
     </footer>
     <script src="./script.js"></script>
 </body>
