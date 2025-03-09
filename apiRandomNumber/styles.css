@@ -86,12 +86,12 @@ main {
 .div-inputs-introduce-numbers {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
+    min-height: 100px;
     background-color: rgb(253, 225, 132);
-    padding: 1%;
     border: transparent solid 1px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -100,6 +100,7 @@ main {
         border: transparent solid 1px;
         border-radius: 6px;
         padding: 1%;
+        margin: 1%;
         text-align: center;
     }
 }
@@ -229,6 +230,7 @@ footer {
     .div-inputs-introduce-numbers {
         flex-direction: row;
         justify-content: space-around;
+        min-height: auto;
     }
 
 
