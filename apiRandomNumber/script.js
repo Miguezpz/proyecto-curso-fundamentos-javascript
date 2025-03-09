@@ -9,6 +9,7 @@
     const INPUT_MAX_VALUE = document.getElementById('input-max-value')
     const INPUT_RANDOM_NUMBER_QUANTITY = document.getElementById('input-random-number-quantity')
     const BUTTON_GET_RANDOM_NUMBER = document.getElementById('button-get-random-number')
+    const DIV_SPAN_RESULT_RANDOM_NUMBER = document.querySelector('.div-span-result-random-number')
     const SPAN_RANDOM_NUMBER_MESSAGE = document.querySelector('.span-random-number-message')
     const SPAN_RESULT_RANDOM_NUMBER = document.getElementById('span-result-random-number')
 
@@ -20,9 +21,9 @@
     async function getRandomNumbersFromAPI (minValue, maxValue, numberQuantity) {
 
         try {
+            DIV_SPAN_RESULT_RANDOM_NUMBER.style.display = 'flex'
             SPAN_RESULT_RANDOM_NUMBER.textContent = ''
             SPAN_RANDOM_NUMBER_MESSAGE.textContent = 'Esperando respuesta del servidor 🔄 ... '
-            SPAN_RANDOM_NUMBER_MESSAGE.style.display = 'flex'
             const generatedNumbers = []
 
             for (let i = 0; i < numberQuantity; i++) {

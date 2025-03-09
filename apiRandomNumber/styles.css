@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    
 }
 
 header {
@@ -92,7 +92,10 @@ main {
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: orange;
+    background-color: rgb(253, 225, 132);
+    padding: 1%;
+    border: transparent solid 1px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -102,39 +105,91 @@ main {
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: brown;
     margin-bottom: 10px;
+
+    & #button-get-random-number {
+        border-radius: 10px;
+        border: black solid 1px;
+        padding: 1%;
+    }
 }
 
 .div-span-result-random-number {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 10vh;
-    background-color: rgb(0, 214, 179);
+    height: auto;
+    border: transparent solid 1px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.76);
     color: white;
+    padding: 1%;
 }
 
 
 .span-random-number-message{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 #span-result-random-number {
-    font-size: 2.5rem;
-    color: black;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
 }
 
 footer {
-    background-color: rgb(252, 121, 121);
-    padding: 1%;
-    border: black solid 1px;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     & .p-API-URL {
+        display: inline;
+        background-color: rgb(252, 121, 121);
         color: white;
-        font-size: 0.7rem;
+        border: black solid 1px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1%;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    & .div-github-repository {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        & a {
+            background-color: rgb(32, 32, 32);
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            border: black solid 1px;
+            border-radius: 10px;
+            padding:0px 1%;
+            
+            & img {
+                width: 25px;
+                height: 25px;
+            }
+
+            & p {
+                display: flex;
+                width: 100%;
+                
+                font-size: 0.7rem;
+            }
+        }
     }
 }
