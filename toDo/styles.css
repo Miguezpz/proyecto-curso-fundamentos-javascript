@@ -122,6 +122,7 @@ header {
             height: 4vh;
             margin-bottom: 1vh;
             padding: 10px 5px;
+            padding: 20px;
 
             & .div-p-task-label {
                 display: flex;
@@ -230,16 +231,16 @@ header {
     header {
         width: 100%;
         
-        & h1 {
+        /* & h1 {
             
         }
 
         & p {
             
-        }
+        } */
     }
 
-    .section-add-task {
+    /* .section-add-task {
         & .div-add-task {
             
             & .div-input-text-add-task {
@@ -285,7 +286,7 @@ header {
                 }
             }
         }
-    }
+    } */
 }
 
 @media (min-width: 640px) {
@@ -297,13 +298,13 @@ header {
     header {
         width: 80%;
         
-        & h1 {
+        /* & h1 {
             
         }
 
         & p {
             
-        }
+        } */
     }
 
     .section-add-task {
@@ -317,11 +318,11 @@ header {
                 }
             }
 
-            & .div-button-add-task {
+            /* & .div-button-add-task {
                 & #button-add-task {
                     
                 }
-            }
+            } */
         }
 
         & .div-span-tasks {
@@ -329,12 +330,12 @@ header {
             & .div-p-and-editButtons {
                 width: 80%;
 
-                & .div-p-task-label {
+                /* & .div-p-task-label {
 
                     & .p-task-label {
                         
                     }
-                }
+                } */
 
                 & .div-button-edit-done-tasks {
                     
@@ -348,14 +349,14 @@ header {
             & .span-tasks {
                 width: 80%;
 
-                & .task-element {
+                /* & .task-element {
                     & .div-p {
 
                         & .task-p-element {
                             
                         }
                     }
-                }
+                } */
             }
         }
     }
@@ -369,13 +370,13 @@ header {
     header {
         width: 70%;
         
-        & h1 {
+        /* & h1 {
             
         }
 
         & p {
             
-        }
+        } */
     }
 
     .section-add-task {
@@ -386,16 +387,16 @@ header {
             & .div-input-text-add-task {
             width: 100%;
 
-                & #input-text-add-task {
+                /* & #input-text-add-task {
                     
-                }
+                } */
             }
 
-            & .div-button-add-task {
+            /* & .div-button-add-task {
                 & #button-add-task {
                     
                 }
-            }
+            } */
         }
 
         & .div-span-tasks {
@@ -403,7 +404,7 @@ header {
             & .div-p-and-editButtons {
                 width: 70%;
 
-                & .div-p-task-label {
+                /* & .div-p-task-label {
 
                     & .p-task-label {
                         
@@ -415,20 +416,20 @@ header {
                     & #button-edit-done-tasks {
                         
                     }
-                }
+                } */
             }
 
             & .span-tasks {
                 width: 70%;
                 
-                & .task-element {
+                /* & .task-element {
                     & .div-p {
 
                         & .task-p-element {
                             
                         }
                     }
-                }
+                } */
             }
         }
     }
@@ -443,13 +444,13 @@ header {
     header {
         width: 60%;
         
-        & h1 {
+        /* & h1 {
             
         }
 
         & p {
             
-        }
+        } */
     }
 
     .section-add-task {
@@ -463,11 +464,11 @@ header {
                 }
             }
 
-            & .div-button-add-task {
+            /* & .div-button-add-task {
                 & #button-add-task {
                     
                 }
-            }
+            } */
         }
 
         & .div-span-tasks {
@@ -475,12 +476,12 @@ header {
             & .div-p-and-editButtons {
                 width: 60%;
 
-                & .div-p-task-label {
+                /* & .div-p-task-label {
 
                     & .p-task-label {
                         
                     }
-                }
+                } */
 
                 & .div-button-edit-done-tasks {
                     
@@ -494,14 +495,14 @@ header {
             & .span-tasks {
                 width: 60%;
 
-                & .task-element {
+                /* & .task-element {
                     & .div-p {
 
                         & .task-p-element {
                             
                         }
                     }
-                }
+                } */
             }
         }
     }
@@ -516,13 +517,13 @@ header {
     header {
         width: 50%;
         
-        & h1 {
+        /* & h1 {
             
         }
 
         & p {
             
-        }
+        } */
     }
 
     .section-add-task {
@@ -535,11 +536,11 @@ header {
                 }
             }
 
-            & .div-button-add-task {
+            /* & .div-button-add-task {
                 & #button-add-task {
                     
                 }
-            }
+            } */
         }
 
         & .div-span-tasks {
@@ -547,12 +548,12 @@ header {
             & .div-p-and-editButtons {
                 width: 50%;
 
-                & .div-p-task-label {
+                /* & .div-p-task-label {
 
                     & .p-task-label {
                         
                     }
-                }
+                } */
 
                 & .div-button-edit-done-tasks {
                     
@@ -566,14 +567,14 @@ header {
             & .span-tasks {
                 width: 50%;
 
-                & .task-element {
+                /* & .task-element {
                     & .div-p {
 
                         & .task-p-element {
                             
                         }
                     }
-                }
+                } */
             }
         }
     }
@@ -588,13 +589,13 @@ header {
     header {
         width: 40%;
         
-        & h1 {
+        /* & h1 {
             
         }
 
         & p {
             
-        }
+        } */
     }
 
     .section-add-task {
@@ -607,11 +608,11 @@ header {
                 }
             }
 
-            & .div-button-add-task {
+            /* & .div-button-add-task {
                 & #button-add-task {
                     
                 }
-            }
+            } */
         }
 
         & .div-span-tasks {
@@ -619,12 +620,12 @@ header {
             & .div-p-and-editButtons {
                 width: 40%;
 
-                & .div-p-task-label {
+                /* & .div-p-task-label {
 
                     & .p-task-label {
                         
                     }
-                }
+                } */
 
                 & .div-button-edit-done-tasks {
                     
@@ -638,14 +639,14 @@ header {
             & .span-tasks {
                 width: 40%;
 
-                & .task-element {
+                /* & .task-element {
                     & .div-p {
 
                         & .task-p-element {
                             
                         }
                     }
-                }
+                } */
             }
         }
     }

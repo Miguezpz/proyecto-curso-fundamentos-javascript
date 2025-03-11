@@ -80,6 +80,10 @@ main {
             margin: 20px 0px;
             text-decoration: none;
             
+            & .titulo-website {
+                background-color: rgba(46, 46, 255, 0.886);
+            }
+
             & p {
                 margin: 6px 10px;
                 width: 100%;
